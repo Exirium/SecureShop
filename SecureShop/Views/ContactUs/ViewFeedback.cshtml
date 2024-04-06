@@ -1,0 +1,8 @@
+﻿@using SecureShop.Models
+@model List<Feedback>
+
+@foreach(var feedback in Model){
+    <h4>@feedback.Subject - @feedback.UserName</h4>
+    <p>@feedback.Comment</p>
+    <br />
+}
